@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Primary red: #D84A4A */
+    --primary: 0.55 0.19 24;
+    --primary-foreground: 1 0 0;
+    /* Page background: #F5F7FA */
+    --background: 0.975 0.005 240;
+    --foreground: 0.15 0.015 250;
+    /* Card: white */
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.015 250;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.015 250;
+    /* Secondary: light gray bg */
+    --secondary: 0.96 0.005 240;
+    --secondary-foreground: 0.3 0.01 250;
+    /* Muted */
+    --muted: 0.96 0.005 240;
+    --muted-foreground: 0.53 0.015 250;
+    /* Accent: light red tint */
+    --accent: 0.97 0.015 24;
+    --accent-foreground: 0.55 0.19 24;
+    /* Destructive */
+    --destructive: 0.55 0.19 24;
+    --destructive-foreground: 1 0 0;
+    /* Border: #E5E7EB */
+    --border: 0.92 0.005 240;
+    --input: 0.92 0.005 240;
+    --ring: 0.55 0.19 24;
+    /* Charts */
+    --chart-1: 0.55 0.19 24;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    /* Sidebar */
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.15 0.015 250;
+    --sidebar-primary: 0.55 0.19 24;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0.015 24;
+    --sidebar-accent-foreground: 0.55 0.19 24;
+    --sidebar-border: 0.92 0.005 240;
+    --sidebar-ring: 0.55 0.19 24;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
